@@ -8,13 +8,14 @@ template_path = 'src/views'
 data_path = 'src/data'
 output_path = 'dist'
 
+
 context = {}
 for f in listdir(data_path):
     if isfile(join(data_path, f)):
         json_data = json.load(open(join(data_path, f)))
         name = re.sub(r'[^a-zA-Z]+', '_', splitext(f)[0])
         context[name] = json_data
-print(context)
+
 
 site = Site.make_site(
     searchpath=template_path,

@@ -1,6 +1,8 @@
 # sssg
-Jinja based simple static site generator
-
+Jinja based simple static site generator using staticjinja
+\
+\
+\
 build site
 ```
 python build.py
